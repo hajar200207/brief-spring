@@ -1,0 +1,16 @@
+<hibernate-configuration>
+<session-factory>
+<!--  Set URL  -->
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/students</property>
+<!--  Set User Name  -->
+<property name="hibernate.connection.username">root</property>
+<!--  Set Password  -->
+<property name="hibernate.connection.password"/>
+<!--  Set Driver Name  -->
+<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.show_sql">true</property>
+<!--  Optional: Auto-generate schema  -->
+<property name="hibernate.hbm2ddl.auto">update</property>
+<mapping class="com.example.model.Student"/>
+</session-factory>
+</hibernate-configuration>
